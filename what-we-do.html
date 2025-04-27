@@ -90,16 +90,19 @@ nav a {
   line-height: 1.6;
 }
 
-/* Multiple workshop images */
+/* Special styling for workshop images */
 .workshop-images {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .workshop-images img {
   width: 100%;
-  max-width: 450px;
+  max-width: 300px;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.5s ease;
@@ -107,12 +110,6 @@ nav a {
 
 .workshop-images img:hover {
   transform: scale(1.05);
-}
-
-@media (min-width: 768px) {
-  .workshop-images {
-    flex-direction: row;
-  }
 }
 
 /* Alternate sections */
@@ -156,27 +153,30 @@ nav a {
     <img src="PNG image-F538531A3EBB-1.png" alt="Nature Walks at Sharodan Park" />
     <div class="section-text">
       <h2>Nature Walks and Trails</h2>
-      <p>Sharodan Park offers peaceful walking along creeks, through forests, rolling hills, and open fields. Reconnect with the quiet beauty of nature as you explore the wonders around you.</p>
+      <p>Sharodan Park offers peaceful walking along creeks, through forests, rolling hills, and open fields.
+      Reconnect with the quiet beauty of nature as you explore the wonders around you.</p>
     </div>
   </div>
 
   <div class="section">
-    <img src="PNG image-7240F525BD1C-1.png" alt="Event Space at Sharodan Park" />
+    <img src="PNG image7240F525BD1C-1.png" alt="Event Space at Sharodan Park" />
     <div class="section-text">
       <h2>Special Events</h2>
-      <p>We offer Pathfinder Clubs special events like camping, abseiling, and Camporee.</p>
+      <p>We offer Pathfinder Clubs special events like camping, abseiling, and Camporees.
+      Sharodan Park is a perfect setting for adventure and friendship in the great outdoors.</p>
     </div>
   </div>
 
   <div class="section">
+    <div class="section-text">
+      <h2>Workshops and Learning</h2>
+      <p>We believe in healthy living and therefore use and preserve as much of our own produce as possible.
+      If you want to learn how to preserve food, we run workshops teaching the art of food preservation.</p>
+    </div>
     <div class="workshop-images">
       <img src="IMG_preserving1.HEIC" alt="Preserving Workshop 1" />
       <img src="IMG_preserving2.HEIC" alt="Preserving Workshop 2" />
       <img src="IMG_preserving3.HEIC" alt="Preserving Workshop 3" />
-    </div>
-    <div class="section-text">
-      <h2>Workshops and Learning</h2>
-      <p>We believe in healthy living and therefore use and preserve as much of our own produce as possible. If you want to learn how to preserve food, we run workshops teaching the art of food preservation.</p>
     </div>
   </div>
 
@@ -184,7 +184,8 @@ nav a {
     <img src="retreat.jpg" alt="Retreats at Sharodan Park" />
     <div class="section-text">
       <h2>Peaceful Retreats</h2>
-      <p>Sharodan Park is a sanctuary for the soul. Whether you're seeking a quiet place to reflect, pray, or simply rest, our peaceful surroundings offer space for true renewal.</p>
+      <p>Sharodan Park is a sanctuary for the soul. Whether you're seeking a quiet place to reflect, pray, or simply rest,
+      our peaceful surroundings offer space for true renewal and connection with God.</p>
     </div>
   </div>
 
