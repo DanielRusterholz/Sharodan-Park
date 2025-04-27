@@ -1,34 +1,79 @@
-<header style="display: flex; align-items: center; padding: 20px;">
-  <a href="index.html" style="text-decoration: none;">
-    <img src="logo.jpeg" alt="Sharodan Park Logo" style="height: 80px; margin-right: 15px;" />
-  </a>
-  <h1 style="font-size: 2em; color: #5C3D2E;">Sharodan Park</h1>
-</header>
-<hr />
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>What We Do</title>
+  <title>What We Do - Sharodan Park</title>
   <style>
-  body {
-    margin: 0;
-    font-family: Georgia, serif;
-    background: linear-gradient(to bottom right, #fef7f1, #e8d9c3);
-    color: #2f2f2f;
-  }
-</style>
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: url('IMG_WhatWeDo.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff; /* White text */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.5); /* semi-transparent header */
+}
+
+header h1 {
+  font-size: 2em;
+  color: #fff;
+}
+
+nav {
+  text-align: center;
+  background: rgba(0,0,0,0.5); /* semi-transparent nav */
+  padding: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.content {
+  background: rgba(0,0,0,0.4); /* lighter dark background */
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+  </style>
 </head>
+
 <body>
+
+<header>
+  <a href="index.html" style="text-decoration: none;">
+    <img src="logo.jpeg" alt="Sharodan Park Logo" style="height: 80px; margin-right: 15px;" />
+  </a>
+  <h1>Sharodan Park</h1>
+</header>
+
+<hr />
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="about.html">About</a> |
+  <a href="what-we-do.html">What We Do</a> |
+  <a href="gallery.html">Gallery</a> |
+  <a href="visit-us.html">Visit Us</a> |
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="content">
   <h1>What We Do</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="what-we-do.html">What We Do</a> |
-    <a href="gallery.html">Gallery</a> |
-    <a href="visit-us.html">Visit Us</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
-  <p>We host events, provide gardens, and preserve local nature.</p>
+  <p>At Sharodan Park, we offer a variety of experiences:<br>
+  Nature walks, event spaces, community gatherings, and peaceful retreats.<br>
+  Our mission is to create a place where nature and people connect beautifully.</p>
+</div>
+
 </body>
 </html>
