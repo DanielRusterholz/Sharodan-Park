@@ -90,6 +90,31 @@ nav a {
   line-height: 1.6;
 }
 
+/* Multiple workshop images */
+.workshop-images {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.workshop-images img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.5s ease;
+}
+
+.workshop-images img:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .workshop-images {
+    flex-direction: row;
+  }
+}
+
 /* Alternate sections */
 .section:nth-child(even) {
   flex-direction: row-reverse;
@@ -136,20 +161,22 @@ nav a {
   </div>
 
   <div class="section">
-    <img src="PNG image-7240F525BD1C-1.png" alt="Event Space at Sharodan Park" />
+    <img src="PNG image7240F525BD1C-1.png" alt="Event Space at Sharodan Park" />
     <div class="section-text">
       <h2>Special Events</h2>
-      <p>We offer Pathfinder Clubs special events like camping and abseiling and Camporee.</p>
+      <p>We offer Pathfinder Clubs special events like camping, abseiling, and Camporee.</p>
     </div>
   </div>
 
   <div class="section">
-    <img src="IMG_preserving1.HEIC" alt="Preserving Workshop at Sharodan Park" />
-    <img src="IMG_preserving2.HEIC" alt="Preserving Workshop at Sharodan Park" />
-    <img src="IMG_preserving3.HEIC" alt="Preserving Workshop at Sharodan Park" />
+    <div class="workshop-images">
+      <img src="IMG_preserving1.HEIC" alt="Preserving Workshop 1" />
+      <img src="IMG_preserving2.HEIC" alt="Preserving Workshop 2" />
+      <img src="IMG_preserving3.HEIC" alt="Preserving Workshop 3" />
+    </div>
     <div class="section-text">
       <h2>Workshops and Learning</h2>
-      <p>We believe in healthy living and therefore use and preserve as much of our own produce as possible. if you want to learn how to preserve food, we do have workshops on food preservation</p>
+      <p>We believe in healthy living and therefore use and preserve as much of our own produce as possible. If you want to learn how to preserve food, we run workshops teaching the art of food preservation.</p>
     </div>
   </div>
 
