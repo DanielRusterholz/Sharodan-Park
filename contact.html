@@ -1,35 +1,76 @@
-<header style="display: flex; align-items: center; padding: 20px;">
-  <a href="index.html" style="text-decoration: none;">
-    <img src="logo.jpeg" alt="Sharodan Park Logo" style="height: 80px; margin-right: 15px;" />
-  </a>
-  <h1 style="font-size: 2em; color: #5C3D2E;">Sharodan Park</h1>
-</header>
-<hr />
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Contact Us</title>
   <style>
-  body {
-    margin: 0;
-    font-family: Georgia, serif;
-    background: linear-gradient(to bottom right, #fef7f1, #e8d9c3);
-    color: #2f2f2f;
-  }
-</style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: url('IMG_ContactUs.jpeg') no-repeat center center fixed; /* <-- background image */
+      background-size: cover;
+      color: #ffffff;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      font-size: 2em;
+      color: #fff;
+    }
+    nav {
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .content {
+      background: rgba(0,0,0,0.3);
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    a.contact-link {
+      color: #add8e6; /* Light blue links */
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+
+<header>
+  <a href="index.html" style="text-decoration: none;">
+    <img src="logo.jpeg" alt="Sharodan Park Logo" style="height: 80px; margin-right: 15px;">
+  </a>
+  <h1>Sharodan Park</h1>
+</header>
+
+<hr>
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="about.html">About</a> |
+  <a href="what-we-do.html">What We Do</a> |
+  <a href="gallery.html">Gallery</a> |
+  <a href="visit-us.html">Visit Us</a> |
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="content">
   <h1>Contact Sharodan Park</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="what-we-do.html">What We Do</a> |
-    <a href="gallery.html">Gallery</a> |
-    <a href="visit-us.html">Visit Us</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
-  <p>Email: <a href="mailto:d.rusterholz@yahoo.com">d.rusterholz@yahoo.com</a></p>
-  <p>Phone: <a href="tel:0490083414">+61490083414</a></p>
+  <p>Email: <a class="contact-link" href="mailto:d.rusterholz@yahoo.com">d.rusterholz@yahoo.com</a></p>
+  <p>Phone: <a class="contact-link" href="tel:+61490083414">+61 490 083 414</a></p>
+</div>
+
 </body>
 </html>
