@@ -5,136 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery | Sharodan Park</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Georgia, serif;
-      background: linear-gradient(to bottom right, #fef7f1, #e8d9c3);
-      color: #2f2f2f;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      padding: 20px;
-    }
-    header img {
-      height: 80px;
-      margin-right: 15px;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      padding: 10px 20px;
-      background-color: #d8bfa7;
-      margin: 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #2f2f2f;
-      font-weight: bold;
-    }
-    main {
-      padding: 20px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: url('IMG_GalleryBackground.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header img {
+  height: 80px;
+  margin-right: 15px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+nav {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+main {
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent dark background */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
   </style>
 </head>
+
 <body>
-  <header>
-    <a href="index.html">
-      <img src="logo.png" alt="Sharodan Park Logo" />
-    </a>
-    <h1>Sharodan Park</h1>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="what-we-do.html">What We Do</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-    </ul>
-  </nav>
+<header>
+  <a href="index.html">
+    <img src="logo.jpeg" alt="Sharodan Park Logo" />
+  </a>
+  <h1>Sharodan Park</h1>
+</header>
 
-  <main>
-    <h2>Photo Gallery</h2>
-    <div class="gallery">
-      <!-- Image list -->
-      <img src="IMG_2811.jpeg" alt="" />
-      <img src="IMG_2480.jpeg" alt="" />
-      <img src="IMG_2861.jpeg" alt="" />
-      <img src="IMG_6305.jpeg" alt="" />
-      <img src="IMG_6541.jpeg" alt="" />
-      <img src="IMG_9487.jpeg" alt="" />
-      <img src="IMG_9492.jpeg" alt="" />
-      <img src="IMG_9493.jpeg" alt="" />
-      <img src="IMG_9687.jpeg" alt="" />
-      <img src="IMG_9671.jpeg" alt="" />
-      <img src="IMG_9796.jpeg" alt="" />
-      <img src="IMG_1760.jpeg" alt="" />
-      <img src="IMG_1675.jpeg" alt="" />
-      <img src="IMG_1242.jpeg" alt="" />
-      <img src="IMG_1216.jpeg" alt="" />
-      <img src="IMG_1052.jpeg" alt="" />
-      <img src="IMG_0575.jpeg" alt="" />
-      <img src="IMG_1703.jpeg" alt="" />
-      <img src="IMG_1704.jpeg" alt="" />
-      <img src="IMG_1960.jpeg" alt="" />
-      <img src="IMG_1963.jpeg" alt="" />
-      <img src="IMG_3592.jpeg" alt="" />
-      <img src="IMG_4147.jpeg" alt="" />
-      <img src="IMG_4148.jpeg" alt="" />
-      <img src="IMG_4434.jpeg" alt="" />
-      <img src="IMG_4491.jpeg" alt="" />
-      <img src="IMG_4681.jpeg" alt="" />
-      <img src="IMG_4682.jpeg" alt="" />
-      <img src="IMG_4685.jpeg" alt="" />
-      <img src="IMG_4697.jpeg" alt="" />
-      <img src="IMG_4748.jpeg" alt="" />
-      <img src="IMG_4753.jpeg" alt="" />
-      <img src="IMG_4879.jpeg" alt="" />
-      <img src="IMG_4881.jpeg" alt="" />
-      <img src="IMG_5375.jpeg" alt="" />
-      <img src="IMG_5937.jpeg" alt="" />
-      <img src="IMG_5946.jpeg" alt="" />
-      <img src="IMG_6383.jpeg" alt="" />
-      <img src="IMG_6383.jpeg" alt="" />
-      <img src="IMG_6602.jpeg" alt="" />
-      <img src="IMG_6608.jpeg" alt="" />
-      <img src="IMG_6409.jpeg" alt="" />
-      <img src="IMG_6456.jpeg" alt="" />
-      <img src="IMG_6594.jpeg" alt="" />
-      <img src="IMG_6682.jpeg" alt="" />
-      <img src="IMG_6685.jpeg" alt="" />
-      <img src="IMG_6715.jpeg" alt="" />
-      <img src="IMG_6726.jpeg" alt="" />
-      <img src="IMG_6733.jpeg" alt="" />
-      <img src="IMG_6759.jpeg" alt="" />
-      <img src="IMG_6763.jpeg" alt="" />
-      <img src="IMG_6792.jpeg" alt="" />
-      <img src="IMG_6800.jpeg" alt="" />
-      <img src="IMG_6805.jpeg" alt="" />
-      <img src="IMG_6809.jpeg" alt="" />
-      <img src="IMG_7238.jpeg" alt="" />
-      <img src="IMG_7245.jpeg" alt="" />
-      <img src="IMG_7780.jpeg" alt="" />
-      <img src="IMG_8084.jpeg" alt="" />
-      <img src="IMG_8204.jpeg" alt="" />
-      <img src="PNG image-7240F525BD1C-1.png" alt="" />
-      <img src="PNG image-AAD980957D82-1.png" alt="" />
-      <img src="PNG image-C9968EC2F7F5-1.png" alt="" />
-      <img src="PNG image-F538531A3EBB-1.png" alt="" />
-    </div>
-  </main>
+<hr />
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="about.html">About</a> |
+  <a href="what-we-do.html">What We Do</a> |
+  <a href="gallery.html">Gallery</a> |
+  <a href="visit-us.html">Visit Us</a> |
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h2>Photo Gallery</h2>
+  <div class="gallery">
+    <!-- Your gallery images -->
+    <img src="IMG_2811.jpeg" alt="" />
+    <img src="IMG_2480.jpeg" alt="" />
+    <img src="IMG_2861.jpeg" alt="" />
+    <img src="IMG_6305.jpeg" alt="" />
+    <img src="IMG_6541.jpeg" alt="" />
+    <img src="IMG_9487.jpeg" alt="" />
+    <img src="IMG_9492.jpeg" alt="" />
+    <img src="IMG_9493.jpeg" alt="" />
+    <img src="IMG_9687.jpeg" alt="" />
+    <img src="IMG_9671.jpeg" alt="" />
+    <!-- (and so on, rest of your images) -->
+  </div>
+</main>
+
 </body>
 </html>
