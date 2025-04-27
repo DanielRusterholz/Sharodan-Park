@@ -2,64 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Visit Us | Sharodan Park</title>
+  <title>Visit Us</title>
   <style>
     body {
       margin: 0;
       font-family: Georgia, serif;
-      background: linear-gradient(to bottom right, #fef7f1, #e8d9c3);
-      color: #2f2f2f;
+      background: url('IMG_VisitUs.jpeg') no-repeat center center fixed; /* <-- your background image */
+      background-size: cover;
+      color: #ffffff;
     }
     header {
       display: flex;
       align-items: center;
       padding: 20px;
-    }
-    header img {
-      height: 80px;
-      margin-right: 15px;
+      background: rgba(0, 0, 0, 0.5); /* semi-transparent header background */
     }
     header h1 {
       font-size: 2em;
-      color: #5C3D2E;
+      color: #fff;
     }
     nav {
       text-align: center;
-      background-color: #d8bfa7;
+      background: rgba(0,0,0,0.5);
       padding: 10px;
-      margin-bottom: 30px;
     }
     nav a {
-      color: #2f2f2f;
+      color: #ffffff;
       text-decoration: none;
       margin: 0 10px;
       font-weight: bold;
     }
-    main {
+    .content {
+      background: rgba(0,0,0,0.5);
       max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.6);
+      margin: 50px auto;
+      padding: 30px;
       border-radius: 10px;
+      text-align: center;
     }
     a.address-link {
-      color: #5C3D2E;
+      color: #add8e6; /* Light blue link */
       text-decoration: underline;
     }
   </style>
 </head>
-
 <body>
 
 <header>
   <a href="index.html" style="text-decoration: none;">
-    <img src="logo.jpeg" alt="Sharodan Park Logo" />
+    <img src="logo.jpeg" alt="Sharodan Park Logo" style="height: 80px; margin-right: 15px;">
   </a>
   <h1>Sharodan Park</h1>
 </header>
 
-<hr />
+<hr>
 
 <nav>
   <a href="index.html">Home</a> |
@@ -70,18 +66,16 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<main>
+<div class="content">
   <h1>Visit Sharodan Park</h1>
-  <p>Find us at 
-    <a 
-      href="https://www.google.com/maps/place/745+Bulmers+Road,+Hogarth+Range+NSW+2469" 
-      target="_blank" 
-      class="address-link">
+  <p>
+    Find us at 
+    <a class="address-link" href="https://www.google.com/maps/place/745+Bulmers+Rd,+Hogarth+Range+NSW+2469" target="_blank">
       745 Bulmers Road, Hogarth Range NSW 2469
-    </a>.
+    </a><br>
+    Open daily from 9 AM to 5 PM.
   </p>
-  <p>Open daily from 9 AM to 5 PM.</p>
-</main>
+</div>
 
 </body>
 </html>
