@@ -1,34 +1,87 @@
-<header style="display: flex; align-items: center; padding: 20px;">
-  <a href="index.html" style="text-decoration: none;">
-    <img src="logo.jpeg" alt="Sharodan Park Logo" style="height: 80px; margin-right: 15px;" />
-  </a>
-  <h1 style="font-size: 2em; color: #5C3D2E;">Sharodan Park</h1>
-</header>
-<hr />
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Visit Us</title>
+  <title>Visit Us | Sharodan Park</title>
   <style>
-  body {
-    margin: 0;
-    font-family: Georgia, serif;
-    background: linear-gradient(to bottom right, #fef7f1, #e8d9c3);
-    color: #2f2f2f;
-  }
-</style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: linear-gradient(to bottom right, #fef7f1, #e8d9c3);
+      color: #2f2f2f;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+    header img {
+      height: 80px;
+      margin-right: 15px;
+    }
+    header h1 {
+      font-size: 2em;
+      color: #5C3D2E;
+    }
+    nav {
+      text-align: center;
+      background-color: #d8bfa7;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+    nav a {
+      color: #2f2f2f;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 10px;
+    }
+    a.address-link {
+      color: #5C3D2E;
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
+
+<header>
+  <a href="index.html" style="text-decoration: none;">
+    <img src="logo.jpeg" alt="Sharodan Park Logo" />
+  </a>
+  <h1>Sharodan Park</h1>
+</header>
+
+<hr />
+
+<nav>
+  <a href="index.html">Home</a> |
+  <a href="about.html">About</a> |
+  <a href="what-we-do.html">What We Do</a> |
+  <a href="gallery.html">Gallery</a> |
+  <a href="visit-us.html">Visit Us</a> |
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
   <h1>Visit Sharodan Park</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="what-we-do.html">What We Do</a> |
-    <a href="gallery.html">Gallery</a> |
-    <a href="visit-us.html">Visit Us</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
-  <p>Find us at 745 Bulmers Road Hogarth Range NSW 2469 , Open daily from 9 AM to 5 PM.</p>
+  <p>Find us at 
+    <a 
+      href="https://www.google.com/maps/place/745+Bulmers+Road,+Hogarth+Range+NSW+2469" 
+      target="_blank" 
+      class="address-link">
+      745 Bulmers Road, Hogarth Range NSW 2469
+    </a>.
+  </p>
+  <p>Open daily from 9 AM to 5 PM.</p>
+</main>
+
 </body>
 </html>
